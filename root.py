@@ -23,3 +23,6 @@ if __name__ == "__main__":
     window.show()
 
     sys.exit(app.exec_())
+# this is constructed as per QT docs for invoking a ui -> py file and load application asa well as gui.
+
+#implementation expectedd:
