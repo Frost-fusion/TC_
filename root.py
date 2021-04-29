@@ -25,4 +25,9 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
 # this is constructed as per QT docs for invoking a ui -> py file and load application asa well as gui.
 
-#implementation expectedd:
+#implementation expected:
+#root.py is project start script-> it checks if database is constructed or not tthen do it so
+# then call main.py to initiate application and show GUI,which is main.ui converted to main_ui.py
+# the complete application will be runed from main.py
+
+# Software structure suggestion will be accepted
