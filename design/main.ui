@@ -11,48 +11,59 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Transfer Certificate</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>190</x>
      <y>10</y>
-     <width>221</width>
-     <height>20</height>
+     <width>331</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
    <property name="text">
-    <string>Zilla Parishd Primary School</string>
+    <string>जि. प. प्राथमिक मराठी शाळा, पिंपरी (ईजारा)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="studentId">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>113</width>
-     <height>22</height>
+     <width>121</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="placeholderText">
-    <string>Student No.</string>
+    <string> विद्यार्थी आय डी</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="searchButton">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>140</x>
      <y>50</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
-    <string>Search</string>
+    <string>शोधा </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="name">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -72,46 +83,46 @@
     </rect>
    </property>
    <property name="text">
-    <string>Name:</string>
+    <string> नांव</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>480</x>
      <y>500</y>
-     <width>93</width>
-     <height>28</height>
+     <width>131</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Update</string>
+    <string>प्रिन्ट प्रेव्हिएव</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="newButton">
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>250</x>
      <y>50</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
-    <string>Add New</string>
+    <string>नवीन जोडा</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="delete_2">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>70</x>
      <y>500</y>
      <width>93</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
-    <string>Delete</string>
+    <string>जुने काढा</string>
    </property>
   </widget>
   <widget class="QPushButton" name="please">
@@ -124,7 +135,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Print </string>
+    <string>प्रिन्ट</string>
    </property>
    <property name="checkable">
     <bool>false</bool>
@@ -138,18 +149,18 @@
     <rect>
      <x>10</x>
      <y>140</y>
-     <width>55</width>
+     <width>81</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Class</string>
+    <string>वडीलांचे नांव</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="classLineEdit">
+  <widget class="QLineEdit" name="fatherName">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>120</x>
      <y>140</y>
      <width>113</width>
      <height>22</height>
@@ -161,27 +172,460 @@
     </font>
    </property>
   </widget>
-  <widget class="QDateEdit" name="dateEdit">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>190</y>
-     <width>110</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>190</y>
+     <y>220</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>जन्म दिनांक अक्षरी</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="middleName">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lastname">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>100</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>140</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>आईचे नांव</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mothername">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>140</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
      <width>55</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Dob</string>
+    <string>धर्म</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>180</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>जात</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>180</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>पोटजात</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="religion">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="caste">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>180</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="subcaste">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>180</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dob">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>220</y>
+     <width>291</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>220</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>जन्मस्थळ (गांव/शहर)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="birthPlace">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>220</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>250</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>तालुका</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="talauka">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>250</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="district">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>280</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>280</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>जिल्हा</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>इ. सनाप्रमाणे जन्म दिनांक</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="bobInCal">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>या पूर्वीची शाळा व इयत्ता</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>या शाळेत प्रवेश घेतल्याचा दिनांक</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="addDate">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>330</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>330</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>इयत्ता:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="class_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>330</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>शाळा सोडल्याचा दिनांक</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="schoolLeft">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>370</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>370</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>कोणत्या इयत्तेत शिकत होता </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="formerClass">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>370</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kruti Dev 010</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>केव्हापासुन (अंकी)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="formWhenClass">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>410</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>410</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>शाळा सोडण्याचे कारण</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="leavingReason">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>400</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>शेरा</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="shera">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>450</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="formerSchool">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>300</y>
+     <width>241</width>
+     <height>22</height>
+    </rect>
    </property>
   </widget>
  </widget>

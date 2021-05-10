@@ -1,7 +1,9 @@
+import os
+import sqlite3
+
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMessageBox
-import sqlite3
-import os
+
 
 class Checks(QtWidgets.QWidget):
     cursor: sqlite3.Cursor
@@ -33,7 +35,10 @@ class Checks(QtWidgets.QWidget):
 
     def createTableInDatabase(self):
         try:
-            query = """CREATE TABLE IF NOT EXISTS class_one(studentId INT(5), name VARCHAR(10), dob TEXT)"""
+            query = """CREATE TABLE IF NOT EXISTS "student" ("studenId"	INTEGER,"addharCard"	INTEGER,"firstname"	TEXT,
+            "middlename"TEXT,"lastname"	TEXT,"fathername"	TEXT,"mothername"	TEXT,"religion"	NUMERIC,"caste"	TEXT,
+            "subcaste"	TEXT,"dob"	INTEGER,"dobCal" DATE,"formerschool"	TEXT,"addDate"	DATE,"leavDate"	DATE,
+            "formerclass"	INTEGER,"class"	INTEGER,"reason"	TEXT);"""
             self.cursor.execute(query)
             self.connection.commit()
         except Exception as e:
